@@ -1,0 +1,435 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+
+header {
+    width           : 100%;
+    height          : 80px;
+    background-color: rgb(93, 96, 99);
+    
+    z-index         : 20;
+    position        : fixed;
+    justify-content : space-between;
+    top             : 0;
+    display         : flex;
+    box-shadow      : 10px 10px 11px rgba(2, 2, 2, 0.4);
+    align-items     : center;
+    
+  }
+  main {
+    overflow-y: scroll;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  #logo {
+    margin-left: 15px;
+    height: 6rem;
+    width: 10rem;
+  }
+  
+  #logo-text {
+    color: rgba(2, 2, 2, 0.932);
+    font-style: italic;
+  }
+  
+  .nav-right {
+    display: flex;
+  }
+  
+  .nav-right a {
+    color: lightgrey;
+  }
+  
+  .nav-right a:hover {
+    display: flex;
+    color  : white;
+  }
+  
+  .nav-right div {
+    margin     : 0 20px;
+    font-size  : 2rem;
+    font-weight: 900;
+  }
+  
+  
+  .nav-left {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+  }
+  
+  .nav-left h1 {
+    margin:0 1rem;
+    font-size: 3rem;
+    color:#fff;
+  font-weight: 900;
+
+    
+}
+  .nav-left h1:hover {
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+
+  }
+  body {
+    font-family: 'Krub', sans-serif;
+    font-weight: thin;
+    background : black;
+    margin     : 0px;
+    overflow-x : hidden;
+  }
+  
+  
+  
+  h1,
+  h2 {
+    color      : white;
+    font-size  : 4em;
+    font-weight: normal;
+    font-family: 'Bangers', cursive !important;
+  }
+  body:after {
+    content               : "";
+    display               : block;
+    position              : fixed;
+    top                   : 0;
+    left                  : 0;
+    margin                : 0;
+    z-index               : -1;
+    width                 : 150%;
+    height                : 150%;
+    background            : url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHpqMowoubBwY-zesdO-8YbSMIaB_lTr4tkw&usqp=CAU');
+    background-size       : contain;
+    /* background-position: 600px -200px; */
+  
+    filter: blur(0px);
+  }
+  
+
+#search-box {
+  display       : flex;
+  flex-direction: column;
+  width         : 60%;
+  max-width     : 500px;
+  
+}
+
+
+div.input {
+  position: relative;
+  height  : 80px;
+}
+
+div.input input {
+  margin       : 0 auto;
+  height       : 60%;
+  width        : 100%;
+  padding      : 0 10px;
+  border-radius: 2px;
+  position     : absolute;
+  border       : none;
+}
+
+.superman {
+  margin: 20% auto;
+}
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.856);
+}
+
+::-moz-placeholder {
+  text-align: center;
+}
+
+
+
+
+
+div.superman input {
+  border       : 2px solid black;
+  color        : black;
+  background   : grey;
+  box-shadow   : 0 10px 10px -10px black;
+  border-radius: 30px;
+}
+.card {
+  margin         : 10% auto;
+  border-radius  : 10px;
+  box-shadow     : 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  width          : 50%;
+  background     : #151515;
+  justify-content: center;
+  font-family    : 'Krub', sans-serif;
+}
+
+.card .ds-top {
+  position     : absolute;
+  border-radius: 10px 10px 0px 0px;
+  width        : 50%;
+  margin       : 10% auto;
+  top          : 0;
+  right        : 0;
+  left         : 0;
+  height       : 250px;
+  background   : crimson;
+  animation    : dsTop 1.5s;
+}
+
+.card-details {
+  width         : 100%;
+  margin        : 50px 0;
+  padding-top   : 40px;
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+  color         : white;
+}
+
+.avatar-holder {
+  z-index      : 1;
+  margin       : auto;
+  border-radius: 50%;
+  width        : 300px;
+  height       : 340px;
+  background   : white;
+  overflow     : hidden;
+  animation    : mvTop 1.5s;
+  border       : 6px solid #151515;
+}
+
+.avatar-holder img {
+  width     : 100%;
+  height    : 100%;
+  object-fit: cover;
+  box-shadow: 0 0 0 5px #151515,
+    inset 0 0 0 5px #000000,
+    inset 0 0 0 5px #000000,
+    inset 0 0 0 5px #000000,
+    inset 0 0 0 5px #000000, ;
+}
+
+.superheroInfo {
+  animation: mvBottom 1.5s;
+  width    : 80%;
+  margin   : 15px auto;
+}
+
+.bar {
+  height         : 5px;
+  background     : crimson;
+  text-align     : right;
+  font-size      : 14px;
+  color          : white;
+  font-size      : 16px;
+  padding        : 1px 5px 17px 0px;
+  animation      : fadeIn 5s;
+  padding-bottom : 17px;
+  animation-delay: 0.4s;
+  border-radius  : 8px;
+}
+
+.bar:hover {
+  background: white;
+  color     : #151515;
+}
+
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    left   : -300px;
+  }
+
+  100% {
+    opacity: 1;
+    left   : 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mvBottom {
+  0% {
+    bottom: -150px;
+  }
+
+  100% {
+    bottom: 10px;
+  }
+}
+
+@keyframes mvTop {
+  0% {
+    top: -150px;
+  }
+
+  100% {
+    top: 40px;
+  }
+}
+
+@keyframes dsTop {
+  0% {
+    top: -150px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+.detail {
+  padding        : 8px;
+  display        : flex;
+  justify-content: space-between;
+  border-bottom  : 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.detail-power {
+  padding        : 8px;
+  justify-content: space-between;
+}
+
+#superhero-image {
+  max-height: 500px;
+  max-width : 90%;
+  box-shadow: 2px 5px 10px #000000;
+}
+
+#superhero-title {
+  margin-top: 40px;
+}
+
+.info-title {
+  margin-right : 10%;
+  font-weight  : 400;
+  margin-bottom: 7px;
+}
+
+.info-content {
+  text-align: right;
+  animation : fadeIn 5s;
+}
+
+#fav-icon {
+  transition: 0.5s;
+  font-size : 1.2rem;
+  color     : crimson;
+}
+
+#fav-icon:hover {
+  transform: scale(1.8);
+  cursor   : pointer;
+}
+
+/* .......CSS for Snackbar........ */
+
+#snackbar {
+  border-radius   : 2px;
+  padding         : 15px;
+  position        : fixed;
+  visibility      : hidden;
+  min-width       : 300px;
+  margin-left     : -125px;
+  color           : white;
+  background-color: rgb(29, 139, 29);
+  text-align      : center;
+  left            : 50%;
+  top             : 80px;
+  z-index         : 30;
+}
+
+#snackbar.visible {
+  visibility: visible;
+  animation : fadein 0.7s, fadeout 0.7s 3s;
+}
+
+
+
+#fav-card {
+  display        : flex;
+  flex-direction : row;
+  flex-wrap      : wrap;
+  justify-content: center;
+  width          : 100%;
+  min-height     : 100vh;
+  margin         : 80px auto;
+}
+
+#fav-card .card {
+  width           : 15%;
+  height          : 350px;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  align-items     : center;
+  background-color: #151515;
+  margin          : 20px;
+}
+
+#fav-card .card .avatar {
+  position     : relative;
+  border-radius: 10px 10px 0px 0px;
+  width        : 94%;
+  height       : 90%;
+  z-index      : 1;
+  overflow     : hidden;
+  animation    : fadeIn 1.5s;
+  border       : 6px solid crimson;
+}
+
+#fav-card .card .detailsButton {
+  margin : 20px auto;
+  padding: 0px 20px;
+}
+
+
+  
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
